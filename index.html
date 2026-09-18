@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skappax Gemini AI Suite | Production-Ready Boilerplates & Automation Tools</title>
+  <meta name="description" content="Ship AI Micro-SaaS, B2B Document Parsers, and Support Agents in minutes with Google Gemini 2.5 and Stripe. Full source code with commercial license.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body { background-color: #090d16; color: #f8fafc; font-family: system-ui, -apple-system, sans-serif; }
+    .glass-card { background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
+    .glass-card:hover { border-color: rgba(99, 102, 241, 0.4); }
+    .glow-indigo { box-shadow: 0 0 40px -10px rgba(99, 102, 241, 0.3); }
+    .glow-gold { box-shadow: 0 0 50px -10px rgba(234, 179, 8, 0.25); }
+  </style>
+</head>
+<body class="selection:bg-indigo-500 selection:text-white">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 border-b border-slate-800/80 bg-[#090d16]/80 backdrop-blur-md">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 to-cyan-400 flex items-center justify-center text-white font-extrabold shadow-lg shadow-indigo-500/30">
+          <i class="fa-solid fa-sparkles text-sm"></i>
+        </span>
+        <span class="font-extrabold text-lg tracking-tight">Skappax<span class="text-indigo-400">Gemini</span>Suite</span>
+      </div>
+      <div class="flex items-center gap-6 text-sm">
+        <a href="#products" class="text-slate-400 hover:text-white transition hidden sm:inline">Products</a>
+        <a href="#docs" class="text-slate-400 hover:text-white transition">Documentation</a>
+        <a href="https://github.com/skappax" target="_blank" class="text-slate-400 hover:text-white transition flex items-center gap-1.5">
+          <i class="fa-brands fa-github text-base"></i> <span class="hidden sm:inline">skappax</span>
+        </a>
+        <a href="https://buy.stripe.com/28E8wSfiq46K7GX0TkeAg03" class="px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold shadow-md shadow-indigo-600/30 transition text-xs sm:text-sm">
+          Get All Suite (69 €)
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-20 px-6 max-w-5xl mx-auto text-center">
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-xs font-semibold mb-6">
+      <i class="fa-solid fa-bolt text-indigo-400"></i> Powered by Google Gemini 2.5 SDK & Native Stripe Checkout
+    </div>
+    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+      Production AI Software & Boilerplates <br class="hidden sm:inline">
+      <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-cyan-400 to-emerald-400">
+        Ready to Ship Today
+      </span>
+    </h1>
+    <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+      Turnkey, battle-tested software kits for indie hackers, developers and businesses. Stop wasting 40+ hours reinventing auth, webhooks, multimodal vision and token streaming.
+    </p>
+
+    <div class="flex flex-wrap items-center justify-center gap-4">
+      <a href="#bundle" class="px-8 py-3.5 rounded-xl bg-gradient-to-r from-yellow-500 to-amber-600 hover:from-yellow-400 hover:to-amber-500 text-slate-950 font-extrabold text-sm sm:text-base shadow-xl shadow-yellow-500/20 transition flex items-center gap-2">
+        <i class="fa-solid fa-crown"></i> Get Master Bundle (69 €)
+      </a>
+      <a href="#products" class="px-6 py-3.5 rounded-xl border border-slate-700 bg-slate-900/60 hover:bg-slate-800 text-slate-300 font-semibold text-sm sm:text-base transition">
+        Browse Individual Tools
+      </a>
+      <a href="#docs" class="px-6 py-3.5 rounded-xl border border-indigo-500/30 bg-indigo-950/20 hover:bg-indigo-900/30 text-indigo-300 font-semibold text-sm sm:text-base transition flex items-center gap-2">
+        <i class="fa-solid fa-book"></i> Read Documentation (EN/IT)
+      </a>
+    </div>
+
+    <!-- Trust Badges -->
+    <div class="mt-12 flex flex-wrap items-center justify-center gap-6 text-xs text-slate-400">
+      <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-400"></i> 100% Tested Codebases</div>
+      <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-400"></i> Lifetime Commercial Rights</div>
+      <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-400"></i> Instant Cloud Delivery</div>
+      <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-400"></i> Bilingual Docs (EN / IT)</div>
+    </div>
+  </section>
+
+  <!-- Master Bundle Spotlight -->
+  <section id="bundle" class="py-12 px-6 max-w-5xl mx-auto">
+    <div class="p-8 sm:p-12 rounded-3xl border-2 border-yellow-500/40 bg-gradient-to-br from-yellow-950/20 via-slate-900 to-indigo-950/30 glow-gold relative overflow-hidden">
+      <div class="absolute top-0 right-0 bg-yellow-500 text-slate-950 text-xs font-extrabold px-6 py-1.5 rounded-bl-2xl uppercase tracking-wider">
+        Best Value Offer • Save 34 €
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-5 text-center">
+          <img src="images/bundle.jpg" alt="Master Collector Edition" class="rounded-2xl shadow-2xl border border-yellow-500/20 w-full max-w-sm mx-auto transform hover:scale-105 transition duration-300">
+        </div>
+        <div class="lg:col-span-7">
+          <span class="text-yellow-400 text-xs font-bold uppercase tracking-widest block mb-2">Master Collector Bundle</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-3">Gemini All-In-One AI Suite</h2>
+          <p class="text-slate-300 text-sm mb-6 leading-relaxed">
+            Get the complete developer software suite: the Next.js SaaS starter, the B2B multimodal document parser, and the customer support triage bot in a single turnkey package.
+          </p>
+          <div class="flex items-baseline gap-3 mb-6">
+            <span class="text-4xl sm:text-5xl font-black text-white">69 €</span>
+            <span class="text-slate-500 line-through text-lg">103 €</span>
+            <span class="px-2.5 py-1 rounded-md bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 text-xs font-bold">Save 33%</span>
+          </div>
+          <ul class="space-y-2.5 text-xs sm:text-sm text-slate-300 mb-8">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-400"></i> All 3 full production codebases with TypeScript & Python</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-400"></i> Google Gemini 2.5 SDK integration with token streaming & vision</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-400"></i> Stripe Checkout & Webhook signature verification ready</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-400"></i> Instant Google Drive ZIP download immediately after payment</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-400"></i> Unlimited lifetime commercial use for your projects & clients</li>
+          </ul>
+          <a href="https://buy.stripe.com/28E8wSfiq46K7GX0TkeAg03" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-yellow-500 hover:bg-yellow-400 text-slate-950 font-extrabold text-base shadow-lg shadow-yellow-500/20 transition active:scale-95">
+            <i class="fa-solid fa-lock"></i> Buy Complete Suite — Instant Access (69 €)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Individual Products Grid -->
+  <section id="products" class="py-16 px-6 max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-extrabold text-white mb-2">Individual Modular Software</h2>
+      <p class="text-slate-400 text-sm">Need only a specific tool? Each asset is standalone, tested, and ready to deploy.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Asset 1 -->
+      <div class="glass-card rounded-3xl p-6 flex flex-col justify-between transition hover:-translate-y-1 duration-200">
+        <div>
+          <img src="images/asset1.jpg" alt="Gemini SaaS Starter" class="rounded-xl w-full aspect-square object-cover mb-5 border border-slate-800">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-bold text-indigo-400 bg-indigo-500/10 px-2.5 py-0.5 rounded-full border border-indigo-500/20">Next.js 14 + Stripe</span>
+            <span class="text-xl font-black text-white">29 €</span>
+          </div>
+          <h3 class="font-bold text-lg text-white mb-2">Gemini Agent Micro-SaaS Starter</h3>
+          <p class="text-slate-400 text-xs mb-4 leading-relaxed">
+            Full Next.js 14 App Router boilerplate with Gemini 2.5 streaming, Stripe Checkout, webhook verification, and dark-mode playground.
+          </p>
+          <ul class="space-y-1.5 text-xs text-slate-300 mb-6">
+            <li><i class="fa-solid fa-check text-indigo-400 mr-1.5"></i> @google/genai SDK integration</li>
+            <li><i class="fa-solid fa-check text-indigo-400 mr-1.5"></i> Stripe Checkout & Webhooks</li>
+            <li><i class="fa-solid fa-check text-indigo-400 mr-1.5"></i> 1-Click Vercel Deploy Guide</li>
+          </ul>
+        </div>
+        <a href="https://buy.stripe.com/4gM00mgmucDg8L1gSieAg00" class="w-full py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs sm:text-sm text-center shadow-lg shadow-indigo-600/30 transition">
+          Buy Asset 1 (29 €)
+        </a>
+      </div>
+
+      <!-- Asset 2 -->
+      <div class="glass-card rounded-3xl p-6 flex flex-col justify-between transition hover:-translate-y-1 duration-200">
+        <div>
+          <img src="images/asset2.jpg" alt="Gemini Invoice Extractor" class="rounded-xl w-full aspect-square object-cover mb-5 border border-slate-800">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/20">FastAPI + Vision</span>
+            <span class="text-xl font-black text-white">39 €</span>
+          </div>
+          <h3 class="font-bold text-lg text-white mb-2">Gemini B2B Invoice & Doc Parser</h3>
+          <p class="text-slate-400 text-xs mb-4 leading-relaxed">
+            Multimodal document parser. Extracts line items, VAT/tax IDs, totals and IBAN from PDF and image invoices directly into validated Pydantic JSON.
+          </p>
+          <ul class="space-y-1.5 text-xs text-slate-300 mb-6">
+            <li><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> Zero Tesseract / OCR dependencies</li>
+            <li><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> Drag-and-Drop FastAPI Web UI</li>
+            <li><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> Validated Pydantic Schema</li>
+          </ul>
+        </div>
+        <a href="https://buy.stripe.com/aFa4gC1rAcDg6CTgSieAg01" class="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm text-center shadow-lg shadow-emerald-600/30 transition">
+          Buy Asset 2 (39 €)
+        </a>
+      </div>
+
+      <!-- Asset 3 -->
+      <div class="glass-card rounded-3xl p-6 flex flex-col justify-between transition hover:-translate-y-1 duration-200">
+        <div>
+          <img src="images/asset3.jpg" alt="Gemini Support Bot" class="rounded-xl w-full aspect-square object-cover mb-5 border border-slate-800">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-bold text-violet-400 bg-violet-500/10 px-2.5 py-0.5 rounded-full border border-violet-500/20">FastAPI + Triage</span>
+            <span class="text-xl font-black text-white">35 €</span>
+          </div>
+          <h3 class="font-bold text-lg text-white mb-2">Customer Support & Triage Agent</h3>
+          <p class="text-slate-400 text-xs mb-4 leading-relaxed">
+            Automated customer service micro-service. Analyzes ticket sentiment, scores urgency (1-5), and drafts contextual auto-replies with human escalation flags.
+          </p>
+          <ul class="space-y-1.5 text-xs text-slate-300 mb-6">
+            <li><i class="fa-solid fa-check text-violet-400 mr-1.5"></i> Automated category classification</li>
+            <li><i class="fa-solid fa-check text-violet-400 mr-1.5"></i> High-empathy automated drafts</li>
+            <li><i class="fa-solid fa-check text-violet-400 mr-1.5"></i> Telegram & Webhook integrations</li>
+          </ul>
+        </div>
+        <a href="https://buy.stripe.com/3cI00m3zI1YCaT959AeAg02" class="w-full py-3 rounded-xl bg-violet-600 hover:bg-violet-500 text-white font-bold text-xs sm:text-sm text-center shadow-lg shadow-violet-600/30 transition">
+          Buy Asset 3 (35 €)
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Documentation Hub -->
+  <section id="docs" class="py-16 px-6 max-w-5xl mx-auto border-t border-slate-800/80">
+    <div class="text-center mb-10">
+      <span class="text-indigo-400 text-xs font-bold uppercase tracking-widest block mb-2">Developer Documentation</span>
+      <h2 class="text-3xl font-extrabold text-white mb-3">Interactive Manuals & Quickstart</h2>
+      <p class="text-slate-400 text-sm">Explore installation steps, code architecture, and API configuration in English or Italian.</p>
+      
+      <!-- Language Switcher -->
+      <div class="mt-6 inline-flex p-1 bg-slate-900 border border-slate-800 rounded-xl">
+        <button id="btnLangEN" onclick="setLang('en')" class="px-4 py-1.5 text-xs font-bold rounded-lg bg-indigo-600 text-white transition">English (EN)</button>
+        <button id="btnLangIT" onclick="setLang('it')" class="px-4 py-1.5 text-xs font-bold rounded-lg text-slate-400 hover:text-white transition">Italiano (IT)</button>
+      </div>
+    </div>
+
+    <!-- Product Tab Selector -->
+    <div class="flex border-b border-slate-800 mb-6 overflow-x-auto">
+      <button onclick="switchDoc('doc-asset1')" id="tab-doc-asset1" class="tab-btn px-6 py-3 text-sm font-semibold border-b-2 border-indigo-500 text-white transition whitespace-nowrap">Asset 1: Next.js SaaS Starter</button>
+      <button onclick="switchDoc('doc-asset2')" id="tab-doc-asset2" class="tab-btn px-6 py-3 text-sm font-semibold border-b-2 border-transparent text-slate-400 hover:text-slate-200 transition whitespace-nowrap">Asset 2: B2B Invoice Extractor</button>
+      <button onclick="switchDoc('doc-asset3')" id="tab-doc-asset3" class="tab-btn px-6 py-3 text-sm font-semibold border-b-2 border-transparent text-slate-400 hover:text-slate-200 transition whitespace-nowrap">Asset 3: Customer Support Bot</button>
+    </div>
+
+    <!-- Doc Content 1: Next.js SaaS Starter -->
+    <div id="doc-asset1" class="doc-panel glass-card rounded-2xl p-6 sm:p-8">
+      <div class="lang-en">
+        <h3 class="text-xl font-bold text-white mb-3">Gemini Agent Micro-SaaS Starter Kit</h3>
+        <p class="text-slate-300 text-sm mb-4">A production-ready template for building and monetizing AI apps using Next.js 14 App Router, Google Gemini 2.5 API, and Stripe Checkout.</p>
+        <h4 class="text-sm font-semibold text-indigo-400 uppercase tracking-wider mb-2">1. Install Dependencies</h4>
+        <pre class="bg-slate-950 p-4 rounded-xl text-xs font-mono text-slate-200 mb-4 overflow-x-auto">npm install</pre>
+        <h4 class="text-sm font-semibold text-indigo-400 uppercase tracking-wider mb-2">2. Environment Configuration (.env.local)</h4>
+        <pre class="bg-slate-950 p-4 rounded-xl text-xs font-mono text-slate-200 mb-4 overflow-x-auto">GEMINI_API_KEY=your_key_here
+STRIPE_SECRET_KEY=sk_live_...
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_live_...
+STRIPE_WEBHOOK_SECRET=whsec_...</pre>
+        <h4 class="text-sm font-semibold text-indigo-400 uppercase tracking-wider mb-2">3. Run Locally & Deploy</h4>
+        <pre class="bg-slate-950 p-4 rounded-xl text-xs font-mono text-slate-200 mb-4 overflow-x-auto">npm run dev</pre>
+        <p class="text-xs text-slate-400">Open <code class="text-indigo-300">http://localhost:3000</code> for landing page or <code class="text-indigo-300">/dashboard</code> for the interactive playground. Ready for 1-click Vercel deployment.</p>
+      </div>
+
+      <div class="lang-it hidden">
+        <h3 class="text-xl font-bold text-white mb-3">Guida in Italiano: Gemini Micro-SaaS Starter Kit</h3>
+        <p class="text-slate-300 text-sm mb-4">Template completo e pronto alla produzione per lanciare la tua applicazione AI a pagamento con Next.js 14, Gemini 2.5 e Stripe.</p>
+        <h4 class="text-sm font-semibold text-indigo-400 uppercase tracking-wider mb-2">1. Installazione</h4>
+        <pre class="bg-slate-950 p-4 rounded-xl text-xs font-mono text-slate-200 mb-4 overflow-x-auto">npm install</pre>
+        <h4 class="text-sm font-semibold text-indigo-400 uppercase tracking-wider mb-2">2. Configurazione (.env.local)</h4>
+        <pre class="bg-slate-950 p-4 rounded-xl text-xs font-mono text-slate-200 mb-4 overflow-x-auto">GEMINI_API_KEY=la_tua_chiave_gemini
+STRIPE_SECRET_KEY=sk_live_...
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_live_...
+STRIPE_WEBHOOK_SECRET=whsec_...</pre>
+        <h4 class="text-sm font-semibold text-indigo-400 uppercase tracking-wider mb-2">3. Avvio e Deploy</h4>
+        <pre class="bg-slate-950 p-4 rounded-xl text-xs font-mono text-slate-200 mb-4 overflow-x-auto">npm run dev</pre>
+        <p class="text-xs text-slate-400">Include già la licenza commerciale senza royalties e la guida al deploy su Vercel in 1 click.</p>
+      </div>
+    </div>
+
+    <!-- Doc Content 2: B2B Invoice Extractor -->
+    <div id="doc-asset2" class="doc-panel glass-card rounded-2xl p-6 sm:p-8 hidden">
+      <div class="lang-en">
+        <h3 class="text-xl font-bold text-white mb-3">Gemini 2.5 B2B Document & Invoice Extractor</h3>
+        <p class="text-slate-300 text-sm mb-4">Autonomous multimodal parser that extracts invoice numbers, dates, line items, VAT, and IBAN into validated Pydantic JSON with zero external OCR engines.</p>
+        <h4 class="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-2">1. Install Requirements</h4>
+        <pre class="bg-slate-950 p-4 rounded-xl text-xs font-mono text-slate-200 mb-4 overflow-x-auto">pip install -r requirements.txt</pre>
+        <h4 class="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-2">2. Run via CLI or Web UI</h4>
+        <pre class="bg-slate-950 p-4 rounded-xl text-xs font-mono text-slate-200 mb-4 overflow-x-auto"># CLI execution:
+python parser.py sample_invoice.pdf
+
+# Start drag-and-drop web UI:
+python app.py</pre>
+        <p class="text-xs text-slate-400">Open <code class="text-emerald-300">http://localhost:8000</code> to drag and drop PDF and image invoices directly in your browser.</p>
+      </div>
+
+      <div class="lang-it hidden">
+        <h3 class="text-xl font-bold text-white mb-3">Guida in Italiano: B2B Document & Invoice Extractor</h3>
+        <p class="text-slate-300 text-sm mb-4">Micro-servizio Python con interfaccia web per l'estrazione automatizzata di dati da fatture, ricevute e contratti con Gemini 2.5 Vision.</p>
+        <h4 class="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-2">1. Installazione Dipendenze</h4>
+        <pre class="bg-slate-950 p-4 rounded-xl text-xs font-mono text-slate-200 mb-4 overflow-x-auto">pip install -r requirements.txt</pre>
+        <h4 class="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-2">2. Avvio</h4>
+        <pre class="bg-slate-950 p-4 rounded-xl text-xs font-mono text-slate-200 mb-4 overflow-x-auto">python app.py</pre>
+        <p class="text-xs text-slate-400">Compatibile con il fisco italiano ed europeo: estrae Partita IVA, Codice Fiscale, imponibile, IVA e IBAN senza bisogno di installare Tesseract.</p>
+      </div>
+    </div>
+
+    <!-- Doc Content 3: Customer Support Bot -->
+    <div id="doc-asset3" class="doc-panel glass-card rounded-2xl p-6 sm:p-8 hidden">
+      <div class="lang-en">
+        <h3 class="text-xl font-bold text-white mb-3">Gemini Omnichannel Support Agent & Triage Bot</h3>
+        <p class="text-slate-300 text-sm mb-4">Automated ticket classifier and empathetic responder. Evaluates customer sentiment, scores urgency (1-5), and triggers human escalation flags when necessary.</p>
+        <h4 class="text-sm font-semibold text-violet-400 uppercase tracking-wider mb-2">1. Setup & Run Server</h4>
+        <pre class="bg-slate-950 p-4 rounded-xl text-xs font-mono text-slate-200 mb-4 overflow-x-auto">pip install -r requirements.txt
+python support_agent.py</pre>
+        <h4 class="text-sm font-semibold text-violet-400 uppercase tracking-wider mb-2">2. Test Swagger API Docs</h4>
+        <p class="text-xs text-slate-400">Visit <code class="text-violet-300">http://localhost:8001/docs</code> to test the interactive API endpoint with sample customer queries.</p>
+      </div>
+
+      <div class="lang-it hidden">
+        <h3 class="text-xl font-bold text-white mb-3">Guida in Italiano: Support Agent & Triage Bot</h3>
+        <p class="text-slate-300 text-sm mb-4">Sistema di assistenza clienti autonoma con analisi del sentiment e categorizzazione intelligente dei ticket per Telegram, Zendesk e webhook.</p>
+        <h4 class="text-sm font-semibold text-violet-400 uppercase tracking-wider mb-2">1. Avvio Server</h4>
+        <pre class="bg-slate-950 p-4 rounded-xl text-xs font-mono text-slate-200 mb-4 overflow-x-auto">pip install -r requirements.txt
+python support_agent.py</pre>
+        <p class="text-xs text-slate-400">Documentazione Swagger interattiva disponibile su <code class="text-violet-300">http://localhost:8001/docs</code>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800/80 py-12 px-6 text-center text-xs text-slate-500">
+    <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <span class="font-bold text-slate-300">Skappax Gemini AI Suite</span>
+        <span>• Created by <a href="https://github.com/skappax" class="text-indigo-400 hover:underline">@skappax</a></span>
+      </div>
+      <div>
+        <span>Instant Cloud Delivery via Google Drive • Powered by Google Gemini 2.5 & Stripe</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function setLang(lang) {
+      if (lang === 'en') {
+        document.querySelectorAll('.lang-en').forEach(el => el.classList.remove('hidden'));
+        document.querySelectorAll('.lang-it').forEach(el => el.classList.add('hidden'));
+        document.getElementById('btnLangEN').className = "px-4 py-1.5 text-xs font-bold rounded-lg bg-indigo-600 text-white transition";
+        document.getElementById('btnLangIT').className = "px-4 py-1.5 text-xs font-bold rounded-lg text-slate-400 hover:text-white transition";
+      } else {
+        document.querySelectorAll('.lang-en').forEach(el => el.classList.add('hidden'));
+        document.querySelectorAll('.lang-it').forEach(el => el.classList.remove('hidden'));
+        document.getElementById('btnLangIT').className = "px-4 py-1.5 text-xs font-bold rounded-lg bg-indigo-600 text-white transition";
+        document.getElementById('btnLangEN').className = "px-4 py-1.5 text-xs font-bold rounded-lg text-slate-400 hover:text-white transition";
+      }
+    }
+
+    function switchDoc(id) {
+      document.querySelectorAll('.doc-panel').forEach(p => p.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(b => {
+        b.classList.remove('border-indigo-500', 'text-white');
+        b.classList.add('border-transparent', 'text-slate-400');
+      });
+      document.getElementById(id).classList.remove('hidden');
+      document.getElementById('tab-' + id).classList.remove('border-transparent', 'text-slate-400');
+      document.getElementById('tab-' + id).classList.add('border-indigo-500', 'text-white');
+    }
+  </script>
+</body>
+</html>
