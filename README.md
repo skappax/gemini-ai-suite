@@ -15,6 +15,9 @@ Launch your AI-powered startup, automate B2B document workflows, or deploy intel
 
 [🌐 **Live Interactive Catalog & Docs Hub**](https://skappax.github.io/gemini-ai-suite/) | [📦 **Browse Community Samples**](./quickstart/)
 
+> [!TIP]
+> 🔥 **LIMITED EARLY BIRD LAUNCH:** The first 10 developers get the entire **Master Developer Bundle for only €39.00** (Regular €69.00 - Save 43%). [**Claim Early Bird License (€39.00)**](https://buy.stripe.com/8x23cy4DM1YC5yP1XoeAg04) with instant code download.
+
 </div>
 
 ---
@@ -29,7 +32,7 @@ Most SaaS boilerplates on the market cost **$199 to $299**, lock you into comple
 
 | Feature / Metric | Expensive Boilerplates (ShipFast, MakerKit) | Gemini AI Suite (This Repository) |
 | :--- | :---: | :---: |
-| **Pricing** | $199.00 – $299.00 | **€29.00 – €39.00** *(or €69 for all 3)* |
+| **Pricing** | $199.00 – $299.00 | **€29.00 – €39.00** *(Early Bird Bundle: €39 for all 3!)* |
 | **AI Engine** | OpenAI / Anthropic (Legacy wrappers) | **Google Gemini 2.5 Flash & Pro (Native SDK)** |
 | **Multimodal Vision** | Often not included or extra addon | **Native PDF & Invoice Vision Parser Included** |
 | **Code Structure** | Heavy, opinionated, hundreds of packages | **Minimal, modular, 100% type-safe TypeScript & Python** |
@@ -97,7 +100,7 @@ Most SaaS boilerplates on the market cost **$199 to $299**, lock you into comple
 
 ---
 
-### 🔥 4. Master Developer Bundle — €69.00 *(Save €34.00)*
+### 🔥 4. Master Developer Bundle — €39.00 Early Bird *(Regular €69.00 - Save 43%)*
 *Get all 3 production repositories with full source code, lifetime updates, and commercial usage.*
 
 <div align="center">
@@ -110,7 +113,9 @@ Most SaaS boilerplates on the market cost **$199 to $299**, lock you into comple
 * ✅ Full bilingual developer manuals (`README.md` & `README_IT.md`)
 * ✅ 100% Type-checked, integration-tested, ready to ship
 
-💳 [**Get the Master Bundle (€69.00) — Instant Download**](https://buy.stripe.com/28E8wSfiq46K7GX0TkeAg03)
+🎉 **Limited Launch Special:** The first 10 copies are available at **€39.00** instead of €69.00.
+💳 [**Claim Early Bird Master Bundle (€39.00 - 43% OFF) — Instant Download**](https://buy.stripe.com/8x23cy4DM1YC5yP1XoeAg04)  
+*(Regular license without discount: [Standard Bundle €69.00](https://buy.stripe.com/28E8wSfiq46K7GX0TkeAg03))*
 
 ---
 
