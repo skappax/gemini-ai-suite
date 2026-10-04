@@ -13,7 +13,7 @@
 **The lightweight, zero-bloat alternative to overpriced $199+ boilerplates.**  
 Launch your AI-powered startup, automate B2B document workflows, or deploy intelligent support agents in minutes with battle-tested code.
 
-[🌐 **Live Interactive Catalog & Docs Hub**](https://skappax.github.io/gemini-ai-suite/) | [📦 **Browse Community Samples**](./quickstart/)
+[🌐 **Live Interactive Catalog & Docs Hub**](https://skappax.github.io/gemini-ai-suite/) | [📖 **Technical Guide & Architecture**](./docs/TUTORIAL_NEXTJS_GEMINI_STRIPE.md) | [📦 **Browse Community Samples**](./quickstart/)
 
 > [!TIP]
 > 🔥 **LIMITED EARLY BIRD LAUNCH:** The first 10 developers get the entire **Master Developer Bundle for only €39.00** (Regular €69.00 - Save 43%). [**Claim Early Bird License (€39.00)**](https://buy.stripe.com/8x23cy4DM1YC5yP1XoeAg04) with instant code download.
