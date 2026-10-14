@@ -27,9 +27,9 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Using Gemini 2.5 Flash for high-speed streaming
+    // Using Gemini 2.5 Flash for high-speed streaming (or model specified in GEMINI_MODEL)
     const model = genAI.getGenerativeModel({
-      model: "gemini-2.5-flash",
+      model: process.env.GEMINI_MODEL || "gemini-2.5-flash",
       generationConfig: {
         temperature: 0.7,
         maxOutputTokens: 2048,
