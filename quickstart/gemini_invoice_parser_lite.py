@@ -5,6 +5,9 @@ Python / Gemini 2.5 Flash Vision Multimodal Invoice Parser
 ============================================================================
 Turnkey production FastAPI service with Pydantic validation & batch export at:
 https://skappax.github.io/gemini-ai-suite/
+NOTE: This lite sample processes 1 image synchronously.
+For multi-page PDF batching, async background tasks, retry-backoff,
+ERP/CSV export and strict VAT validation, see the full B2B Automator package.
 ============================================================================
 """
 

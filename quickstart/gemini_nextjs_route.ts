@@ -4,6 +4,8 @@
 // ============================================================================
 // Turnkey production boilerplate with Stripe, Auth, and Dashboard available at:
 // https://skappax.github.io/gemini-ai-suite/
+// NOTE: This is a standalone streaming route sample. For complete Stripe Webhook
+// handling, user sessions, dark-mode UI, and model fallbacks, grab the Master Bundle.
 // ============================================================================
 
 import { GoogleGenerativeAI } from "@google/generative-ai";
