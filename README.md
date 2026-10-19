@@ -5,7 +5,7 @@
 
 [![CI & Tests](https://github.com/skappax/gemini-ai-suite/actions/workflows/ci.yml/badge.svg)](https://github.com/skappax/gemini-ai-suite/actions/workflows/ci.yml)
 [![Next.js 14](https://img.shields.io/badge/Next.js-14%20App%20Router-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![Google Gemini 2.5](https://img.shields.io/badge/Google%20Gemini-2.5%20Flash%20%26%20Pro-4285F4?style=for-the-badge&logo=google)](https://ai.google.dev/)
+[![Google Gemini 3.8 Flash](https://img.shields.io/badge/Google%20Gemini-2.5%20Flash%20%26%20Pro-4285F4?style=for-the-badge&logo=google)](https://ai.google.dev/)
 [![Stripe Ready](https://img.shields.io/badge/Stripe-Billing%20%26%20Webhooks-635BFF?style=for-the-badge&logo=stripe)](https://stripe.com/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-Python%203.11+-009688?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-100%25%20Type--Safe-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
@@ -26,14 +26,14 @@ Launch your AI-powered startup, automate B2B document workflows, or deploy intel
 
 Most SaaS boilerplates on the market cost **$199 to $299**, lock you into complex vendor ecosystems, and come with hundreds of unnecessary dependencies. 
 
-**Gemini AI Suite** gives you clean, modular, production-ready source code designed around Google's next-gen **Gemini 2.5 architecture** (1M+ context window, ultra-fast streaming, native multimodal vision) at a fraction of the cost.
+**Gemini AI Suite** gives you clean, modular, production-ready source code designed around Google's next-gen **Gemini 3.8 Flash architecture** (1M+ context window, ultra-fast streaming, native multimodal vision) at a fraction of the cost.
 
 ### 📊 Comparison Table
 
 | Feature / Metric | Expensive Boilerplates (ShipFast, MakerKit) | Gemini AI Suite (This Repository) |
 | :--- | :---: | :---: |
 | **Pricing** | $199.00 – $299.00 | **€29.00 – €39.00** *(Early Bird Bundle: €39 for all 3!)* |
-| **AI Engine** | OpenAI / Anthropic (Legacy wrappers) | **Google Gemini 2.5 Flash & Pro (Native SDK)** |
+| **AI Engine** | OpenAI / Anthropic (Legacy wrappers) | **Google Gemini 3.8 Flash & Pro (Native SDK)** |
 | **Multimodal Vision** | Often not included or extra addon | **Native PDF & Invoice Vision Parser Included** |
 | **Code Structure** | Heavy, opinionated, hundreds of packages | **Minimal, modular, 100% type-safe TypeScript & Python** |
 | **Support Bot System** | Rare / basic placeholder | **Turnkey Ticket Triager & Sentiment Analyzer** |
@@ -51,7 +51,7 @@ Most SaaS boilerplates on the market cost **$199 to $299**, lock you into comple
 </div>
 
 * **Tech Stack:** Next.js 14 (App Router), TypeScript, Tailwind CSS, Stripe Billing & Webhooks.
-* **AI Engine:** Google Gemini 2.5 SDK (`@google/generative-ai`) with server-sent event streaming.
+* **AI Engine:** Google Gemini 3.8 Flash SDK (`@google/generative-ai`) with server-sent event streaming.
 * **Key Features:**
   * Ready-to-ship dark mode landing page & responsive dashboard.
   * Stripe Checkout session flow with automated webhook handlers.
@@ -70,7 +70,7 @@ Most SaaS boilerplates on the market cost **$199 to $299**, lock you into comple
 </div>
 
 * **Tech Stack:** FastAPI, Python 3.11+, Pydantic V2, Google GenAI SDK.
-* **AI Engine:** Gemini 2.5 Flash Multimodal Vision.
+* **AI Engine:** Gemini 3.8 Flash Multimodal Vision.
 * **Key Features:**
   * Direct extraction from raw PDF, PNG, and JPEG documents.
   * Deterministic Pydantic schemas: extract vendor, invoice number, line items, VAT, and totals.
@@ -89,7 +89,7 @@ Most SaaS boilerplates on the market cost **$199 to $299**, lock you into comple
 </div>
 
 * **Tech Stack:** FastAPI, Python 3.11+, Pydantic V2, Webhook Dispatcher.
-* **AI Engine:** Gemini 2.5 Pro reasoning engine.
+* **AI Engine:** Gemini 3.8 Flash Pro reasoning engine.
 * **Key Features:**
   * Real-time sentiment classification (`urgent`, `frustrated`, `neutral`, `satisfied`).
   * Automated ticket categorization (Billing, Tech Support, Feature Request).
@@ -127,15 +127,15 @@ Most SaaS boilerplates on the market cost **$199 to $299**, lock you into comple
 flowchart TD
     User([End User / Client]) -->|HTTPS / UI| NextJS[Next.js 14 SaaS WebApp]
     NextJS -->|Stripe Checkout| Stripe[(Stripe API & Webhooks)]
-    NextJS -->|Realtime Stream| GeminiAPI[Google Gemini 2.5 Flash SDK]
+    NextJS -->|Realtime Stream| GeminiAPI[Google Gemini 3.8 Flash SDK]
     
     B2B[Enterprise Invoices / Receipts] -->|PDF / Image Upload| FastAPI[FastAPI Document Service]
-    FastAPI -->|Multimodal Vision| GeminiVision[Gemini 2.5 Flash Vision]
+    FastAPI -->|Multimodal Vision| GeminiVision[Gemini 3.8 Flash Vision]
     GeminiVision -->|Strict JSON| Pydantic[Pydantic V2 Schemas]
     Pydantic -->|Export| Database[(ERP / Database / CSV)]
 
     Tickets[Support Tickets] -->|Webhook / API| SupportBot[Gemini Support Triager]
-    SupportBot -->|Sentiment & Category| GeminiPro[Gemini 2.5 Pro Engine]
+    SupportBot -->|Sentiment & Category| GeminiPro[Gemini 3.8 Flash Pro Engine]
     GeminiPro -->|Empathetic Draft| Dispatch[Zendesk / Slack / Email]
 ```
 
@@ -143,7 +143,7 @@ flowchart TD
 
 ## ⚡ Try the Free Quickstart Sample
 
-We believe in open, readable code. You can test the Gemini 2.5 streaming integration right now:
+We believe in open, readable code. You can test the Gemini 3.8 Flash streaming integration right now:
 
 ```bash
 # 1. Clone this repository
@@ -178,7 +178,7 @@ All tests passed! 100% verification rate.
 
 * **TypeScript Type-Check:** `tsc --noEmit` -> 0 errors.
 * **Pydantic V2 Models:** Deterministic extraction with runtime schema validation.
-* **Gemini 2.5 Streaming Latency:** ~240ms Time-To-First-Token (TTFT) via Server-Sent Events.
+* **Gemini 3.8 Flash Streaming Latency:** ~240ms Time-To-First-Token (TTFT) via Server-Sent Events.
 
 You can verify the test suite yourself at any time:
 ```bash

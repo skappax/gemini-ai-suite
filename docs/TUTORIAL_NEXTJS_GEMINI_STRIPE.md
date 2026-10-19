@@ -1,20 +1,20 @@
 ---
-title: How to Build a Production-Ready AI SaaS with Next.js 14, Google Gemini 2.5 Streaming & Stripe
+title: How to Build a Production-Ready AI SaaS with Next.js 14, Google Gemini 3.8 Flash Streaming & Stripe
 published: true
-description: Step-by-step guide to building a blazing-fast AI SaaS using Next.js 14 App Router, Google Gemini 2.5 Flash API with streaming, and Stripe billing.
+description: Step-by-step guide to building a blazing-fast AI SaaS using Next.js 14 App Router, Google Gemini 3.8 Flash API with streaming, and Stripe billing.
 tags: nextjs, react, webdev, ai, stripe
 canonical_url: https://skappax.github.io/gemini-ai-suite/
 cover_image: https://raw.githubusercontent.com/skappax/gemini-ai-suite/main/images/gemini-suite-bundle-cover.jpg
 ---
 
-# How to Build a Production-Ready AI SaaS with Next.js 14, Google Gemini 2.5 Streaming & Stripe
+# How to Build a Production-Ready AI SaaS with Next.js 14, Google Gemini 3.8 Flash Streaming & Stripe
 
 Building an AI SaaS in 2026 is no longer about just calling an LLM endpoint and waiting 10 seconds for a response. Modern users expect:
 1. **Sub-second Time-to-First-Token (TTFT)** via Server-Sent Events (SSE).
 2. **Predictable margins** without getting crushed by high per-token pricing.
 3. **Rock-solid Stripe billing** with webhook-driven entitlement verification.
 
-In this tutorial, we will build a complete end-to-end AI SaaS architecture using **Next.js 14 App Router**, the **Google Gemini 2.5 Flash API**, and **Stripe Checkout & Webhooks**.
+In this tutorial, we will build a complete end-to-end AI SaaS architecture using **Next.js 14 App Router**, the **Google Gemini 3.8 Flash API**, and **Stripe Checkout & Webhooks**.
 
 ---
 
@@ -23,15 +23,15 @@ In this tutorial, we will build a complete end-to-end AI SaaS architecture using
 ```mermaid
 flowchart LR
     User[Client Browser] -->|1. Prompt Input| NextRoute["Next.js 14 App Router (/api/chat)"]
-    NextRoute -->|2. Stream Request| GeminiAPI["Google Gemini 2.5 Flash API"]
+    NextRoute -->|2. Stream Request| GeminiAPI["Google Gemini 3.8 Flash API"]
     GeminiAPI -->|3. Token Chunks| NextRoute
     NextRoute -->|4. SSE ReadableStream| User
     User -->|5. Subscribe| StripeCheckout["Stripe Checkout"]
     StripeCheckout -->|6. invoice.paid Webhook| WebhookHandler["/api/webhooks/stripe"]
 ```
 
-### Why Google Gemini 2.5 Flash?
-- **Speed**: Gemini 2.5 Flash offers the lowest latency among frontier models (~200ms TTFT).
+### Why Google Gemini 3.8 Flash?
+- **Speed**: Gemini 3.8 Flash offers the lowest latency among frontier models (~200ms TTFT).
 - **Cost Efficiency**: At **$0.075 / 1M input tokens**, it is roughly **33x cheaper** than GPT-4o ($2.50 / 1M), making SaaS gross margins exceed 90%.
 - **Massive Context**: 1M+ tokens allows full-document and multi-file analysis in a single prompt.
 
@@ -56,7 +56,7 @@ export async function POST(req: NextRequest) {
     }
 
     const model = genAI.getGenerativeModel({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-3.8-flash',
       systemInstruction: systemInstruction || 'You are an expert full-stack developer assistant.',
     });
 
@@ -256,7 +256,7 @@ export async function POST(req: NextRequest) {
 ## Summary & Full Starter Kit
 
 With this stack:
-- You get sub-second responses using **Gemini 2.5 Flash** streaming.
+- You get sub-second responses using **Gemini 3.8 Flash** streaming.
 - You keep infrastructure costs near zero thanks to Google AI Studio's competitive token pricing and Next.js serverless functions.
 - You have automated recurring revenue via **Stripe Billing**.
 
@@ -265,7 +265,7 @@ With this stack:
 If you don't want to build auth, database schemas, rate-limiting, and UI templates from scratch, check out the **[Gemini AI Suite](https://github.com/skappax/gemini-ai-suite)**.
 
 It includes:
-- **`gemini-saas-starter`**: Complete Next.js 14 App Router boilerplate with Gemini 2.5 streaming, shadcn/ui components, and Stripe.
+- **`gemini-saas-starter`**: Complete Next.js 14 App Router boilerplate with Gemini 3.8 Flash streaming, shadcn/ui components, and Stripe.
 - **`gemini-b2b-automator`**: FastAPI high-throughput PDF/invoice extractor with Pydantic schemas.
 - **`gemini-support-agent`**: Multi-agent customer support triage & auto-responder.
 

@@ -41,7 +41,7 @@ def parse_invoice(image_path: str) -> dict:
         "Return ONLY the raw JSON object, without markdown formatting or backticks."
     )
 
-    model_name = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+    model_name = os.environ.get("GEMINI_MODEL", "gemini-3.8-flash")
     response = client.models.generate_content(
         model=model_name,
         contents=[

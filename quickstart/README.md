@@ -1,11 +1,11 @@
 # 🚀 Gemini AI Suite - Quickstart Community Samples
 
-This directory provides standalone, working examples demonstrating the power of the **Google Gemini 2.5 SDK** in modern web and backend environments.
+This directory provides standalone, working examples demonstrating the power of the **Google Gemini 3.8 Flash SDK** in modern web and backend environments.
 
 ## Available Examples
 
-1. **`gemini_nextjs_route.ts`**: Next.js 14 App Router streaming endpoint using `@google/generative-ai` with `gemini-2.5-flash`.
-2. **`gemini_invoice_parser_lite.py`**: Python script extracting structured JSON invoices via Gemini 2.5 Flash Vision.
+1. **`gemini_nextjs_route.ts`**: Next.js 14 App Router streaming endpoint using `@google/generative-ai` with `gemini-3.8-flash`.
+2. **`gemini_invoice_parser_lite.py`**: Python script extracting structured JSON invoices via Gemini 3.8 Flash Vision.
 
 ---
 
